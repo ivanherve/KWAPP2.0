@@ -2,7 +2,7 @@
 Projet d'Intégration EPHEC 2018
 
 <p align="center">
-  <img src="http://www.kwapp.eu/images/newlogo.png"> </p>
+  <img src="https://github.com/gpk659/KWAPP2.0/blob/master/code/www/images/KwapplogoBlack.png"> </p>
 # Introduction
 Dans le cadre du YEP (Young Enterprise Project) qui est un programme d'apprentissage de création d'entreprise à travers lequel des groupes ont été créée. Il nous a été demandé, en 
 collaboration avec la maison du développement Durable d'initier un projet.  La thématique était la suivante : réduire la consommation d'électricité afin d'encourager le maintien 
