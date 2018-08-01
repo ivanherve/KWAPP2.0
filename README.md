@@ -2,7 +2,7 @@
 Projet d'Intégration EPHEC 2018
 
 <p align="center">
-  <img src="https://github.com/gpk659/KWAPP2.0/blob/master/code/www/images/KwapplogoBlack.png"> </p>
+  <img src="https://github.com/gpk659/KWAPP2.0/blob/master/code/www/images/KwapplogoBlack2.png"> </p>
   
 # Introduction
 
