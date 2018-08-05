@@ -188,5 +188,5 @@ create table usershaveappliances
   foreign key (UserId) references user (UserId)
 )
   comment 'calculate per month, in order to obtain the result per day eg , devided the result to 28/29/30/31';
-
+--maybe we have to add a table "mail" in order to keep / auto generate mail content. 
 
