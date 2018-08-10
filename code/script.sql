@@ -171,22 +171,20 @@ create table userprofil
 
 create table usershaveappliances
 (
-  UserId       int                                 not null,
-  idAppliance  int(11) unsigned                    not null,
-  HeureParMois decimal                             not null
-  comment 'utilisation des appareilles par mois',
-  Create_date  datetime default CURRENT_TIMESTAMP  null,
-  Last_update  timestamp default CURRENT_TIMESTAMP null
-  on update CURRENT_TIMESTAMP,
-  primary key (UserId, idAppliance),
-  constraint usershaveappliances_idAppliance_uindex
-  unique (idAppliance),
-  constraint usershaveappliances_tbappliance_idAppliance_fk
-  foreign key (idAppliance) references tbappliance (idAppliance)
-    on update cascade,
-  constraint usershaveappliances_utilisateur_UserId_fk
-  foreign key (UserId) references user (UserId)
+	idUHA int auto_increment
+		primary key,
+	UserId int not null,
+	idAppliance int(11) unsigned not null,
+	HeureParMois decimal not null comment 'utilisation des appareilles par mois',
+	Create_date datetime default CURRENT_TIMESTAMP null,
+	Last_update timestamp default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP,
+	constraint usershaveappliances_tbappliance_idAppliance_fk
+		foreign key (idAppliance) references kwapp_test.tbappliance (idAppliance)
+			on update cascade,
+	constraint usershaveappliances_user_UserId_fk
+		foreign key (UserId) references kwapp_test.user (UserId)
+			on update cascade
 )
-  comment 'calculate per month, in order to obtain the result per day eg , devided the result to 28/29/30/31';
+comment 'calculate per month, in order to obtain the result per day eg , devided the result to 28/29/30/31';
 --maybe we have to add a table "mail" in order to keep / auto generate mail content. 
 
