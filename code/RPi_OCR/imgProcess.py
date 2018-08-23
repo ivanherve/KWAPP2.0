@@ -209,17 +209,9 @@ cv2.imshow('edgesAffined.png', edgesAffined)
 f0 = "%Y%m%d%H%M%S"
 f1 = '%Y-%m-%d %H:%M:%S'
 now = strftime(f1,gmtime());
-'''
-#data = {'dataCaptureOCR':testText, 'timeCaptureOCR':now, 'idUtilisateur':4}
-data = {'releveToAdd':testText,  'numSerie':'42azerty'}
-data = bytes( urllib.parse.urlencode( data ).encode() )
-handler = urllib.request.urlopen( "http://192.168.1.22:8080/relevenormaltoadd", data )
-#'http://www.kwapp.eu/connect/insertOCR.php'
-print( handler.read().decode( 'utf-8' ))
-'''
+
 url = 'http://www.kwapp.eu/relevenormaltoadd' # Set destination URL here
 post_fields = {'releveToAdd':testText,  'numSerie':'SDFdfs54'}    # Set POST fields here
-#urlData = urllib.parse.urlencode(post_fields)
 request = urllib.request.Request(url, bytes( urllib.parse.urlencode( post_fields ).encode() ))
 json = urlopen(request).read().decode()
 print(json)
