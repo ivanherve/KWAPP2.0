@@ -1,0 +1,73 @@
+Mode d'emploie pour utilisation de kWapp
+
+1/ Etant donnée que notre application est toujours en phase de développement,
+	Nous vous invitons à l'utiliser via l'application mobile 'Expo Client'. 
+	Si vous n'avez pas Expo Client, vous pouvez l'installer via App Store ou Play Store.
+
+
+2/ Une fois installé, nous vous invitons à nous faire parvenir votre adresse e-mail 
+où nous vous enverrons, par mail, un lien vous permettant d'ouvrir l'application kWapp et de l'utiliser.
+
+	Il faudra patientier quelques minutes, le temps que l'application React-Native soit chargé.
+
+	Si une erreur se produit, il faut un petit peu secouer votre smartphone pour que s'affiche une page Expo de paramètrage, 
+	appuyer alors sur 'Reload JS' (soit le bouton tout en haut)
+
+
+3/ Une fois kWapp lancé, vous arrivez sur une page de connexion.
+
+	3.1/ Vous pouvez vous inscrire en cliquant sur "S'incrire", ainsi vous compléter le formualiraire,
+	Pour le numéro de série vous pouvez en inventer un, cependant comme il n'existe pas dans la base de données 
+	vous ne pourrez pas voir de graphique, une fois connecté, car il n'aura effectuer aucun relevé.
+	Une fois le formulaire rempli, vous serez directement connecté juste après.
+
+	3.2/ Si vous souhaitez apercevoir les graphiques, nous vous recommandons de vous connecter avec le compte de l'utilisateur suivant:
+	e-mail : he201323@students.ephec.be
+	mdp : 04022018
+
+
+4/ Une fois connecté, vous vous trouverez par défaut dans la page d'accueil. 
+	En bas de l'écran il y a 4 onglets de navigation: 
+		Le premier à gauche est la page d'accueil,
+		Le second est la pages des graphiques (prix de consommation éléctrique en fonction du temps)
+		Le troisième est la page des appareils
+		Le quatrième est la page des paramètres
+
+	4.1/ La page d'accueil n'affiche que des conseils de bonne pratique sur notre façon d'utiliser nos différents appareils 
+		afin de minimiser notre consommation éléctrique.
+
+	4.2/ La page des graphiques, elle, contient encore 2 autres onglets au-dessus, Jours et Semaines.
+		La page 'Jours', elle, affiche un un graphique du prix de votre consommation éléctrique (en euro) en fonction des heures.
+		Ce graphique commence à partir du moment où l'OCR a pris la première photo dans la journée 
+		et termine après la dernière photo de la journée.
+		Le premier graphique qui s'affiche par défaut sont les prelèvement d'aujourd'hui. Mais au-dessus vous pouvez voir un bouton
+		où vous pouvez choisir une date pour voir les prélèvement précédents.
+		Si vous vous êtes connecté avec l'utilisateur du 3.2, vous aurez une alerte qui dit "Il n'y a pas de relevé", cela est 
+		tout à fait normal car l'OCR n'a pris aucune photo aujourd'hui. Cependant vous pouvez choisir les dates du 16/08 ou 17/08
+		soit les dates de prélèvement, où un graphique s'affichera.
+
+		La page 'Semaines', elle, affiche un histogramme des moyennes des prix de votre consommation éléctrique de chaque jours des 
+		7 derniers jours où l'OCR a effectué des prélèvements. 
+
+	4.3/ La page des appareils, elle, nous permet d'évaluer la consommation éléctrique de chaque appareil que l'on dispose et 
+		combien cette appareil va nous coûter à la fin du mois, en consommation éléctrique.
+
+		Premièrement, vous arrivez sur la page de la liste de vos propres appareils, 
+		vous y voyez aussi deux boutons au-dessus : "Ajouter un appareil" et "Consommation de mes appareils".
+		Lorsque vous cliquez sur "Ajouter un appareil", une page s'affiche avec une liste déroulante d'appareil. 
+		Vous devez cliquer sur un appareil, que vous possedez dans votre maison, et indiquer le nombre d'heure d'utilisation par mois.
+		Une fois indiqué, l'application affiche un message d'alerte comme quoi l'appareil en question a bien été ajouté. Vous pouvez donc cliquer
+		sur le bouton de retour pour revenir à la page précédente, à la liste de vos appareils, et vous pouvez rafraichir la page en glissant
+		du haut vers le bas la zone en dessous des deux boutons. Là vous voyez s'afficher votre appareil avec le nombre de watt que celui-ci
+		consomme par heure.
+		Ainsi vous pouvez cliquez sur "Consommation de mes appareils" et voir un graphique de la consommation éléctrique de chaque appareil que vous 
+		disposez en Watt/Mois. Et en dessous du graphique, une liste détaillé de vos appareil qui indique le nombre de watt par mois que 
+		l'appareil consomme et le prix qu'il va couter à la fin du mois.
+	
+	4.4/ La page des paramètres vous permet ici de pouvoir modifier vos informations personnelles, mot de passe, prendre contact en cas de besoin ou 
+		de vous déconnectez. Il y a quatre boutons qui proposent les différents options cité juste avant:
+			- Modifier vos informations (Nom, Prénom, date de naissance, adresse e-mail, communes et fournisseur d'éléctricité)
+			- Modifier votre mot de passe
+			- Prendre contact avec l'équipe kWapp
+			- Se déconnecter
+		
